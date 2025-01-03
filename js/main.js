@@ -834,6 +834,7 @@
             22. Category Slider
         --------------------------------------------------------- */
         $('.ltn__category-slider-active').slick({
+            autoplay: true,
             arrows: true,
             dots: false,
             infinite: true,
