@@ -1,9 +1,30 @@
-.ltn__header-5 .ltn__header-middle-area {
-    padding-top: 15px !important; 
-     padding-bottom: 15px !important;
+
+.text-aligenment{
+    text-align: justify;
+}
+.ltn__top-bar-menu > ul > li,
+.ltn__top-bar-menu > ul > li marquee {
+    font-weight: 500;
+}
+.ltn__top-bar-menu > ul > li:last-child {
+    font-weight: 700;
+}
+.ltn__utilize-menu-inner {
+    padding-right: 0%;
+}
+.ltn__utilize-menu > ul > li { 
+    margin-top: 0%;
+}
+.ltn__main-menu ul {
+    margin-left: 12.5%;
 }
 .hide-content{
     visibility: hidden !important;
+}
+
+/* Hero Section */
+.ltn__slide-item-inner {
+    display: none;
 }
 
 /* Set proper height for the slider */
@@ -14,7 +35,9 @@
 
 .ltn__slide-item {
     position: relative;
-    height: 100vh; /* Full screen height */
+    max-height: auto;
+    height: 575px;
+    max-width: 100% !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,6 +55,15 @@
     .ltn__slide-item {
         height: 60vh; /* Adjust height for small devices */
     }
+    .site-logo-wrap {
+        margin: 0% !important;
+    }
+    .ltn__header-options {
+        flex: none !important;
+    } 
+        .site-logo {
+        max-width: 200px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -39,16 +71,44 @@
         height: 50vh; /* Adjust height for extra small devices */
     }
 }
+
+/*  About Section */
+.about-us-info-wrap .ltn__section-title-2 .section-title {
+    font-size: 45px;
+}
+.ltn__section-title-2 {
+    margin-bottom: 2.5%;
+}
+.about-us-info-wrap .ltn__section-title-2 p {
+    padding: 0 0 0 10px;
+    max-width: 625px;
+}
+.about-us-info-wrap .btn-wrapper {
+    margin-top: 2.5%;
+}
+
+/*  Categorys  */
+.ltn__category-item {
+    background-image: url(../img/categories/product-brush-circle-effect.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .ltn__category-item-img img{
- max-height: 140px;
+    max-height: 200px;
 }
 .ltn__category-item {
     border-radius: 4px;
 }
 
-.about-section-title{
-    font-size: 35px !important;
+
+/* Global Presence */
+
+
+
+/* Footer */
+.footer-widget {
+    margin-bottom: 20px;
 }
-.text-aligenment{
-    text-align: justify;
+.ltn__copyright-area {
+    padding: 30px 0 5px
 }

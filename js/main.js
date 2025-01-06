@@ -864,7 +864,7 @@
                     breakpoint: 768,
                     settings: {
                         arrows: false,
-                        dots: true,
+                        dots: false,
                         slidesToShow: 2,
                         slidesToScroll: 1
                     }
@@ -873,8 +873,8 @@
                     breakpoint: 580,
                     settings: {
                         arrows: false,
-                        dots: true,
-                        slidesToShow: 2,
+                        dots: false,
+                        slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 },
