@@ -21,6 +21,9 @@
 .hide-content{
     visibility: hidden !important;
 }
+#scrollUp {
+    bottom: 50px;
+}
 
 /* Hero Section */
 .ltn__slide-item-inner {
@@ -240,6 +243,9 @@
 .ltn__feature-area {
     background: #fff6e3;
 }
+.ltn__feature-item-8 {
+    padding: 40px 10px 15px;
+}
 
 
 
@@ -252,5 +258,6 @@
     margin-bottom: 20px;
 }
 .ltn__copyright-area {
-    padding: 30px 0 5px
+    padding-top: 20px;
+    padding-bottom: 0px;
 }
