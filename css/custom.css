@@ -100,6 +100,52 @@
     border-radius: 4px;
 }
 
+/* Why Choose Us */
+.why-choose-us {
+    background: #fff6e3;
+}
+.why-choose-us .ltn__feature-item-3 {
+    padding: 25px 10px 15px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 12px;
+}
+.ltn__feature-item-3 .ltn__feature-icon {
+    line-height: 1;
+}
+.ltn__feature-item-3 .ltn__feature-info h3 {
+    font-size: 22px;
+}
+@media (max-width: 991px) {
+    .why-choose-us .ltn__feature-item-3.text-right {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        text-align: start !important;
+    }
+    .why-choose-us .ltn__feature-item-3.text-right .ltn__feature-icon {
+        margin: 0px 20px 0 0;
+    }
+    .why-choose-us .ltn__feature-item-3.text-right::before {
+        left: -2px;
+        right: auto;
+    }
+}
+
+/* Counter Up Area */
+.ltn__counterup-area:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    z-index: -9;
+    background-color: #000;
+}
 
 /* Global Presence Section */
 .global-business {
@@ -190,10 +236,18 @@
     }
 }
 
+/* Feature Items */
+.ltn__feature-area {
+    background: #fff6e3;
+}
 
 
 
 /* Footer */
+.footer-top-area {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 .footer-widget {
     margin-bottom: 20px;
 }
