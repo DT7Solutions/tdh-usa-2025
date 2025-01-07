@@ -1,35 +1,29 @@
-
-(function($) {
-    "use strict";
-
-    $(document).ready( function() {
-
-         const testimonialSliderflags = new Swiper(".testimonial-slider-flags", {
-            spaceBetween: 10,
-            speed: 1000,
-            loop: true,  
-            slidesPerView: 1,  
-            centeredSlides: true,  
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false,
+// Initialize Swiper slider
+document.addEventListener("DOMContentLoaded", function () {
+    const testimonialSliderflags = new Swiper(".testimonial-slider-flags", {
+        spaceBetween: 10,
+        speed: 1000,
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: true,
+        autoplay: {
+            delay: 15000000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".array-next",
+            prevEl: ".array-prev",
+        },
+        breakpoints: {
+            485: {
+                slidesPerView: 1,
             },
-            navigation: {
-                nextEl: ".array-prev",
-                prevEl: ".array-next",
+            768: {
+                slidesPerView: 3,
             },
-            breakpoints: {
-
-                485: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 3, 
-                },
-                1200: {
-                    slidesPerView: 6,
-                }
-            }
-        });
+            1200: {
+                slidesPerView: 5,
+            },
+        },
     });
-})
+});
