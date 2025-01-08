@@ -2,6 +2,28 @@
 .text-aligenment{
     text-align: justify;
 }
+.hide-content{
+    visibility: hidden !important;
+}
+#scrollUp {
+    bottom: 7.5%;
+}
+.btn {
+    font-size: 14px;
+    padding: 6px 12px;
+}
+body,p,
+.ltn__section-title-2 p { 
+    font-size: 14px;
+    line-height: 1.5;
+}
+.ltn__section-title-2 .section-title {
+    font-size: 34px;
+}
+.ltn__section-title-2 .section-subtitle {
+    font-size: 16px;
+    margin-bottom: 0.5%
+}
 .ltn__top-bar-menu > ul > li,
 .ltn__top-bar-menu > ul > li marquee {
     font-weight: 500;
@@ -18,12 +40,6 @@
 .ltn__main-menu ul {
     margin-left: 12.5%;
 }
-.hide-content{
-    visibility: hidden !important;
-}
-#scrollUp {
-    bottom: 50px;
-}
 
 /* Hero Section */
 .ltn__slide-item-inner {
@@ -35,7 +51,6 @@
     position: relative;
     overflow: hidden;
 }
-
 .ltn__slide-item {
     position: relative;
     max-height: auto;
@@ -46,17 +61,15 @@
     background-repeat: no-repeat;
 }
 
-
 /* Mobile Responsive Styles */
 @media (max-width: 1024px) {
     .ltn__slide-item {
-        height: 80vh; /* Adjust height for tablets */
+        height: 80vh;
     }
 }
-
 @media (max-width: 768px) {
     .ltn__slide-item {
-        height: 60vh; /* Adjust height for small devices */
+        height: 60vh; 
     }
     .site-logo-wrap {
         margin: 0% !important;
@@ -68,23 +81,19 @@
         max-width: 200px;
     }
 }
-
 @media (max-width: 480px) {
     .ltn__slide-item {
-        height: 50vh; /* Adjust height for extra small devices */
+        height: 50vh;
     }
 }
 
 /*  About Section */
-.about-us-info-wrap .ltn__section-title-2 .section-title {
-    font-size: 45px;
-}
 .ltn__section-title-2 {
     margin-bottom: 2.5%;
 }
 .about-us-info-wrap .ltn__section-title-2 p {
     padding: 0 0 0 10px;
-    max-width: 625px;
+    max-width: 100%;
 }
 .about-us-info-wrap .btn-wrapper {
     margin-top: 2.5%;
@@ -101,6 +110,23 @@
 }
 .ltn__category-item {
     border-radius: 4px;
+}
+
+/* Founder Message */
+.founder-message p {
+    max-width: 100%;
+    padding: 0 0 0 1.5%;
+    margin-bottom: 2.5%;
+    text-align: justify;
+}
+.founder-message .about-img-right {
+    margin-left: 0%;
+}
+.founder-message .about-img-right img {
+    border-radius: 12px;
+}
+.founder-message .ltn__progress-bar-wrap {
+    margin-bottom: 0px;
 }
 
 /* Why Choose Us */
@@ -137,6 +163,22 @@
     }
 }
 
+/* Call To Action */
+.main-cta .ltn__service-form-margin {
+    border-radius: 12px;
+}
+.main-cta .bg-overlay-theme-black-80:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    z-index: -9;
+    background-color: #000;
+}
+
 /* Counter Up Area */
 .ltn__counterup-area:before {
     position: absolute;
@@ -153,10 +195,11 @@
 /* Global Presence Section */
 .global-business {
     background-image: url('/img/countery/global-presence-bg.png');
-    height: 600px;
+    height: auto;
     max-height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat-x;
 }
 .global-business .global-presence .text {
     max-width: 70%;
@@ -179,11 +222,8 @@
 }
 .flag-img {
     width: 100%;
-    height: 100px;
     max-width: 250px;
-    margin: 0 auto;
     transition: transform 0.3s ease;
-    padding: 5px 12px;
     object-fit: contain;
 }
 .testimonial-slider-flags .swiper-slide-active .flag-img {
@@ -196,13 +236,10 @@
 .country-name {
     visibility: hidden;
     text-align: center;
-    font-size: 16px;
-    margin-top: -5px;
     color: #333;
 }
 .swiper-slide-active .country-name {
     display: block;
-    margin-top: -5px;
     visibility: visible;
 }
 @media (max-width: 991px) {
@@ -245,11 +282,31 @@
 }
 .ltn__feature-item-8 {
     padding: 40px 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ltn__feature-item-8 .ltn__feature-icon {
+    margin-right: 0px;
+}
+.ltn__feature-item-8 .ltn__feature-info p {
+    padding: 0% 2.5%;
 }
 
-
-
 /* Footer */
+.ltn__footer-area:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -9;
+    opacity: 0.5;
+    background-color: #fff;
+}
 .footer-top-area {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -260,4 +317,5 @@
 .ltn__copyright-area {
     padding-top: 20px;
     padding-bottom: 0px;
+    border-top: 1px solid #e53e29 !important;
 }
