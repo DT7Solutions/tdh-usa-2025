@@ -98,6 +98,29 @@ body,p,
 .about-us-info-wrap .btn-wrapper {
     margin-top: 2.5%;
 }
+.about-us-img-wrap img {
+    border-radius: 12px;
+}
+
+/* Founder Message */
+.founder-message p {
+    max-width: 100%;
+    margin-bottom: 2.5%;
+    text-align: justify;
+}
+.founder-message .ltn__section-title-2 p {
+    padding: 0 0 0 10px;
+    max-width: 100%;
+}
+.founder-message .about-img-right {
+    margin-left: 0%;
+}
+.founder-message .about-img-right img {
+    border-radius: 12px;
+}
+.founder-message .ltn__progress-bar-wrap {
+    margin-bottom: 0px;
+}
 
 /*  Categorys  */
 .ltn__category-item {
@@ -112,21 +135,18 @@ body,p,
     border-radius: 4px;
 }
 
-/* Founder Message */
-.founder-message p {
-    max-width: 100%;
-    padding: 0 0 0 1.5%;
-    margin-bottom: 2.5%;
-    text-align: justify;
+/* Our Products */
+.ltn__product-tab-area .product-badge {
+    display: none;
 }
-.founder-message .about-img-right {
-    margin-left: 0%;
+.ltn__product-tab-area .ltn__tab-menu {
+    margin-bottom: 25px;
 }
-.founder-message .about-img-right img {
-    border-radius: 12px;
-}
-.founder-message .ltn__progress-bar-wrap {
-    margin-bottom: 0px;
+.ltn__product-tab-area .ltn__gallery-filter-menu button,
+.ltn__product-tab-area .ltn__tab-menu a {
+    padding: 5px 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 /* Why Choose Us */
@@ -166,8 +186,9 @@ body,p,
 /* Call To Action */
 .main-cta .ltn__service-form-margin {
     border-radius: 12px;
+    background-position: right center;
 }
-.main-cta .bg-overlay-theme-black-80:before {
+.main-cta .ltn__service-form-margin:before {
     position: absolute;
     content: "";
     left: 0;
@@ -176,6 +197,7 @@ body,p,
     height: 100%;
     width: 100%;
     z-index: -9;
+    border-radius: 12px;
     background-color: #000;
 }
 

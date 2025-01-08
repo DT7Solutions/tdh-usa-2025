@@ -537,7 +537,7 @@
             17. Tab Product Slider One
         --------------------------------------------------------- */
         $('.ltn__tab-product-slider-one-active').slick({
-            arrows: true,
+            arrows: false,
             dots: false,
             infinite: true,
             speed: 300,
