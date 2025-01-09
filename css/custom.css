@@ -8,9 +8,18 @@
 #scrollUp {
     bottom: 7.5%;
 }
-.btn {
+.btn-effect-1 {
     font-size: 14px;
     padding: 6px 12px;
+    border-radius: 6px;
+}
+.btn-effect-1::after,
+.btn-effect-1:hover::after {
+    border-radius: 6px;
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
 }
 body,p,
 .ltn__section-title-2 p { 
@@ -148,6 +157,64 @@ body,p,
     margin-right: 5px;
     margin-bottom: 10px;
 }
+.ltn__product-item-3 {
+    padding: 2.5% 0%;
+    border: 2px solid;
+    border-color: var(--border-color-8);
+    border-radius: 6px;
+}
+.ltn__product-item-3:hover {
+    -webkit-box-shadow: 0 16px 32px 0 rgb(255, 246, 227);
+    box-shadow: 0 16px 32px 0 rgb(255, 246, 227)
+}
+.ltn__product-item-3 .product-title {
+    font-size: 18px;
+}
+.ltn__product-item-3 .product-info {
+    padding: 5px 20px 5px;
+}
+.ltn__product-item-3 .product-info > ul {
+    padding: 5px 0;
+    margin-bottom: 0%;
+    border-bottom: 1px solid var(--border-color-12);
+    border-top: 1px solid var(--border-color-12);
+    list-style: none;
+}
+.ltn__product-item-3 .product-info > ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0%;
+}
+.ltn__product-item-3 .product-info > ul li strong {
+    font-weight: 400;
+}
+.ltn__product-item-3 .product-info > ul li span {
+    font-weight: 600;
+}
+.ltn__product-item-3 .btn-wrapper {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+.ltn__product-item-3 .btn-wrapper .btn-effect-1 {
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ltn__product-item-3 .btn-wrapper .btn-effect-1::after,
+.ltn__product-item-3 .btn-wrapper .btn-effect-1:hover::after {
+    border-radius: 3px;
+}
+.ltn__product-item-3 .btn-wrapper .btn i {
+    margin-left: 5px;
+}
+
 
 /* Why Choose Us */
 .why-choose-us {
@@ -341,3 +408,44 @@ body,p,
     padding-bottom: 0px;
     border-top: 1px solid #e53e29 !important;
 }
+
+
+/* Enquiry Now Modal Form */
+.enquiry-now-form-box {
+    padding: 2.5% 2.5%;
+    position: relative;
+    z-index: 1;
+}
+.enquiry-now-form-box .title-2 {
+    margin-bottom: 2.5%;
+}
+.enquiry-now-form-box input::-webkit-input-placeholder {
+    color: var(--ltn__color-1);
+}
+.enquiry-now-form-box input::-moz-placeholder {
+    color: var(--ltn__color-1);
+}
+.enquiry-now-form-box input:-ms-input-placeholder {
+    color: var(--ltn__color-1);
+}
+.enquiry-now-form-box input:-moz-placeholder {
+    color: var(--ltn__color-1);
+}
+.enquiry-now-form-box input[type="text"], 
+.enquiry-now-form-box input[type="email"], 
+.enquiry-now-form-box input[type="password"], 
+.enquiry-now-form-box input[type="submit"],
+.enquiry-now-form-box .nice-select,
+.enquiry-now-form-box textarea {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.enquiry-now-form-box input::placeholder,
+.enquiry-now-form-box .nice-select .disabled,
+.enquiry-now-form-box textarea::placeholder {
+    font-weight: 500;
+    color: #9b9b9b;
+}  
