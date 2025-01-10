@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// ==================== DYNAMIC PRODUCT DATA UPDATE LOGIC======================================= //
+// ==================== DYNAMIC PRODUCT DATA UPDATE LOGIC ========================== //
 
 /* Quick View Modal Popup Dynamic Information Logic */
 document.querySelectorAll('.btn[title="Quick View"]').forEach(button => {
@@ -77,5 +77,49 @@ document.querySelectorAll('.btn[title="enquiry Now"]').forEach(button => {
         enquiryModal.querySelector('#product-img')?.setAttribute('src', productImgSrc);
         enquiryModal.querySelector('#product-title')?.setAttribute('value', productTitle);
         enquiryModal.querySelector('#modal-product-weight')?.setAttribute('value', productWeight);
+    });
+});
+
+/* Add To Cart Modal Popup Dynamic Information Logic */
+document.querySelectorAll('.btn[title="Add to Cart"]').forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const productItem = button.closest('.ltn__product-item');
+
+        // Extract product details using IDs or Classes
+        const productImgSrc = productItem.querySelector('#product-img')?.getAttribute('src') || '';
+        const productTitle = productItem.querySelector('#product-title')?.textContent || 'N/A';
+        const productDescription = productItem.querySelector('#product-description')?.textContent || 'N/A';
+        const productBrand = productItem.querySelector('#modal-product-brand')?.textContent || 'N/A';
+        const productWeight = productItem.querySelector('#modal-product-weight')?.textContent || 'N/A';
+        const productCategory = productItem.querySelector('#modal-product-category')?.textContent || 'N/A';
+        const productType = productItem.querySelector('#modal-product-type')?.textContent || 'N/A';
+
+        // Update modal content
+        document.querySelector('#add_to_cart_modal #product-img').setAttribute('src', productImgSrc);
+        document.querySelector('#add_to_cart_modal #product-title').textContent = productTitle;
+    });
+});
+
+/* Wishlist Modal Popup Dynamic Information Logic */
+document.querySelectorAll('.btn[title="Wishlist"]').forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const productItem = button.closest('.ltn__product-item');
+
+        // Extract product details using IDs or Classes
+        const productImgSrc = productItem.querySelector('#product-img')?.getAttribute('src') || '';
+        const productTitle = productItem.querySelector('#product-title')?.textContent || 'N/A';
+        const productDescription = productItem.querySelector('#product-description')?.textContent || 'N/A';
+        const productBrand = productItem.querySelector('#modal-product-brand')?.textContent || 'N/A';
+        const productWeight = productItem.querySelector('#modal-product-weight')?.textContent || 'N/A';
+        const productCategory = productItem.querySelector('#modal-product-category')?.textContent || 'N/A';
+        const productType = productItem.querySelector('#modal-product-type')?.textContent || 'N/A';
+
+        // Update modal content
+        document.querySelector('#liton_wishlist_modal #product-img').setAttribute('src', productImgSrc);
+        document.querySelector('#liton_wishlist_modal #product-title').textContent = productTitle;
     });
 });

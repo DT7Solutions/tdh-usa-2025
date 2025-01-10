@@ -138,6 +138,7 @@ body,p,
 }
 .founder-message .about-img-right img {
     border-radius: 12px;
+    max-width: 100%;
 }
 .founder-message .ltn__progress-bar-wrap {
     margin-bottom: 0px;
@@ -424,7 +425,7 @@ body,p,
 
 /* Enquiry Now Modal Form */
 .enquiry-now-form-box {
-    padding: 2.5% 2.5%;
+    padding: 2.5% 1.25%;
     position: relative;
     z-index: 1;
 }
