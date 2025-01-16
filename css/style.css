@@ -855,6 +855,12 @@ button:focus {
 .input-item-website.ltn__custom-icon::before {
   content: "\f0ac"; }
 
+.input-item-address.ltn__custom-icon::before {
+  content: "\f015";}
+
+.input-item-address-book.ltn__custom-icon::before {
+  content: "\f2b9";}
+
 .input-item-date.ltn__custom-icon::before {
   content: "\f073"; }
 

@@ -31,7 +31,7 @@ body,p,
 }
 .ltn__section-title-2 .section-subtitle {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 18px;
     font-weight: 700;
     margin-bottom: 0.5%
 }
@@ -113,6 +113,8 @@ body,p,
 /* Breadcrumb Section */
 .ltn__breadcrumb-area {
     margin-bottom: 2.5%;
+    padding-top: 100px;
+    padding-bottom: 75px;
 }
 .ltn__breadcrumb-area:before {
     position: absolute;
@@ -511,3 +513,30 @@ body,p,
         padding: 8px 15px;
     }
 }
+
+
+/* Vission & Mission */
+.ltn__vision-mission .ltn__feature-item-6 {
+    margin-bottom: 0px;
+}
+.ltn__vision-mission .ltn__feature-item-6 .ltn__feature-info h3 {
+    color: var(--ltn__primary-color);
+}
+
+/* Contact Us Page */
+.ltn__contact-address-item-3 {
+    padding: 20px 15px 10px;
+    margin-bottom: 0%;
+}
+.ltn__contact-address-item-3 .ltn__contact-address-icon img {
+    max-width: 50px;
+}
+.ltn__contact-address-item-3 h3,
+.ltn__contact-address-item-3 p,
+.ltn__contact-address-item-3 .ltn__contact-address-icon {
+    margin-bottom: 7.5px;
+}
+.contact-form-box input::placeholder,
+.contact-form-box textarea::placeholder {
+    color: #9b9b9b;
+}  
