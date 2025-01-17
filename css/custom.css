@@ -597,3 +597,20 @@ body,p,
         white-space: normal;
     }
 }
+
+/* Our Networks Page */
+.ltn__brand-logo-item {
+    opacity: 0.75;
+    filter: grayscale(0.75)
+}
+.ltn__brand-logo-item img {
+    border-radius: 8px;
+}
+@media (max-width: 574px) {
+    .ltn__our-networks .pt-250 {
+        padding-top: 100px;
+    }
+    .ltn__our-networks .pb-250 {
+        padding-bottom: 100px;
+    }
+}
