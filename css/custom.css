@@ -539,4 +539,61 @@ body,p,
 .contact-form-box input::placeholder,
 .contact-form-box textarea::placeholder {
     color: #9b9b9b;
-}  
+}
+
+/* Awards and Recognitions Page */
+.ltn__gallery-item-info {
+    padding: 20px 15px;
+}
+.ltn__gallery-item-img img { 
+    width: 100%;
+}
+.ltn__gallery-item:hover .ltn__gallery-item-img::before {
+    opacity: 0.5;
+    visibility: visible;
+}
+.ltn__gallery-item .ltn-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 20%;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--ltn__secondary-color);
+    color: var(--white);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 4.5%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+.ltn__gallery-item .ltn__gallery-item-info p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-in-out;
+}
+.ltn__gallery-item:hover .ltn__gallery-item-info p {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    white-space: normal;
+}
+@media (max-width: 991px) {
+    .ltn__gallery-item .ltn-date {
+        left: 2.0%;
+    }
+    .ltn__gallery-item .ltn__gallery-item-info p {
+        -webkit-line-clamp: unset;
+        display: block;
+        overflow: visible;
+        white-space: normal;
+    }
+}

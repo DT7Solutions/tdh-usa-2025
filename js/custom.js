@@ -123,3 +123,8 @@ document.querySelectorAll('.btn[title="Wishlist"]').forEach(button => {
         document.querySelector('#liton_wishlist_modal #product-title').textContent = productTitle;
     });
 });
+
+
+
+
+
