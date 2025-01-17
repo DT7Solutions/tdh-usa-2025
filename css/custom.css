@@ -596,6 +596,9 @@ body,p,
         overflow: visible;
         white-space: normal;
     }
+    .ltn__gallery-area .mt-100 {
+        margin-top: 0px;
+    }
 }
 
 /* Our Networks Page */
@@ -613,4 +616,22 @@ body,p,
     .ltn__our-networks .pb-250 {
         padding-bottom: 100px;
     }
+}
+
+/* News and Events Page */
+.ltn__news-events-area .ltn__service-item-1 {
+    background-color: #F7F5EB;
+}
+
+/* CSR Initiatives Page */
+.ltn__csr-initiatives-area .ltn__blog-brief {
+    padding: 30px 20px;
+}
+
+
+
+
+
+.ltn__pagination-area {
+    display: none
 }
