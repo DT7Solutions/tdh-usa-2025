@@ -437,6 +437,18 @@ body,p,
 .footer-widget {
     margin-bottom: 20px;
 }
+.footer-newsletter input[type="email"] {
+    margin: 0;
+    padding-right: 50px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.footer-newsletter .btn-wrapper .btn {
+    padding: 0 18px;
+    height: 97.5%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
 .ltn__copyright-area {
     padding-top: 20px;
     padding-bottom: 0px;
@@ -445,6 +457,9 @@ body,p,
 
 
 /* Enquiry Now Modal Form */
+.ltn__enquiry-now-modal-area .modal-header .close {
+    z-index: 9;
+}
 .enquiry-now-form-box {
     padding: 2.5% 1.25%;
     position: relative;
@@ -524,9 +539,13 @@ body,p,
 }
 
 /* Contact Us Page */
+.title-2 {
+    margin-bottom: 10px;
+}
 .ltn__contact-address-item-3 {
     padding: 20px 15px 10px;
-    margin-bottom: 0%;
+    margin-bottom: 2%;
+    border-radius: 4px;
 }
 .ltn__contact-address-item-3 .ltn__contact-address-icon img {
     max-width: 50px;
@@ -539,6 +558,17 @@ body,p,
 .contact-form-box input::placeholder,
 .contact-form-box textarea::placeholder {
     color: #9b9b9b;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+textarea {
+    height: 50px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    border-radius: 4px;
 }
 
 /* Awards and Recognitions Page */
@@ -624,8 +654,8 @@ body,p,
 }
 
 /* CSR Initiatives Page */
-.ltn__csr-initiatives-area .ltn__blog-brief {
-    padding: 30px 20px;
+.ltn__csr-initiatives-area .ltn__blog-brief p {
+    padding: 10px;
 }
 
 
