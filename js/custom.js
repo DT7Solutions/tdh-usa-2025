@@ -125,6 +125,18 @@ document.querySelectorAll('.btn[title="Wishlist"]').forEach(button => {
 });
 
 
-
-
+/* Our Journey Tabs Auto Play Slide Logic */
+document.addEventListener("DOMContentLoaded", function () {
+    let historyTabsContainer = document.querySelector(".ltn__our-history-inner .ltn__tab-menu .nav");
+    if (!historyTabsContainer) return;
+    let tabs = historyTabsContainer.querySelectorAll("a");
+    let index = 0;
+    let intervalTime = 5000;
+    function switchTab() {
+        let nextIndex = (index + 1) % tabs.length;
+        tabs[nextIndex].click();
+        index = nextIndex;
+    }
+    setInterval(switchTab, intervalTime);
+});
 
