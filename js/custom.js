@@ -146,8 +146,7 @@ function pdfbtn() {
     window.open(pdfUrl, '_blank');
 }
 
-
-
+/* CONTACT FORM SELECT OPTION */
 $(document).ready(function () {
     $('select').niceSelect();
 

@@ -232,9 +232,8 @@ p {
     margin-bottom: 10px;
 }
 .ltn__product-item-3 {
-    padding: 2.5% 0%;
-    border: 2px solid;
-    border-color: var(--border-color-8);
+    padding: 2.5% 0% 0%;
+    border: 2px solid var(--border-color-8);
     border-radius: 6px;
 }
 .ltn__product-item-3 .product-title {
@@ -262,6 +261,49 @@ p {
 .ltn__product-item-3 .product-info > ul li span {
     font-weight: 600;
 }
+.product-action {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.product-action ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 1px;
+}
+.product-action ul li {
+    flex: 1;
+    text-align: center;
+}
+.product-action ul li a {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    background-color: var(--ltn__secondary-color);
+    color: var(--white);
+    border-color: var(--ltn__secondary-color);
+}
+.product-action ul li a:hover {
+    background-color: var(--white);
+    color: var(--ltn__secondary-colorwhite);
+}
+.product-action ul li:first-child a {
+    border-bottom-left-radius: 6px;
+}
+.product-action ul li:nth-child(2) a {
+    border-bottom-right-radius: 6px;
+}
+
+
 .ltn__product-item-3 .btn-wrapper {
     margin-top: 0px;
     display: flex;
