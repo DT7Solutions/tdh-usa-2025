@@ -1158,12 +1158,34 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="input-item">
-                                                            <input type="text" name="title" placeholder="Product Title" id="product-title" readonly>
+                                                            <select id="product-title" name="product-title" required>
+                                                                <option value="" disabled selected>Select a Product</option>
+                                                                <option value="Premium Urad Gota" data-weight="2 LB">Premium Urad Gota</option>
+                                                                <option value="Premium Toor Dal" data-weight="2 LB">Premium Toor Dal</option>
+                                                                <option value="Chana Dal" data-weight="4 LB">Chana Dal</option>
+                                                                <option value="Moong Dal" data-weight="500 GM">Moong Dal</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="input-item">
-                                                            <input type="text" name="weight" placeholder="Product Weight" id="modal-product-weight" readonly>
+                                                            <select id="modal-product-weight" name="product-weight" required>
+                                                                <option value="" disabled selected>Select a Weight</option>
+                                                                <option value="2 LB">2 LB</option>
+                                                                <option value="4 LB">4 LB</option>
+                                                                <option value="Other">Other</option>
+                                                            </select>
+                                                            <input type="number" class="d-none" id="custom-weight" name="custom-weight" placeholder="Enter custom weight">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="input-item">
+                                                            <select id="when-required" name="when-required" required>
+                                                                <option value="" disabled selected>When are you required?</option>
+                                                                <option value="Immediately">Immediately</option>
+                                                                <option value="Within 3 months">Within 3 months</option>
+                                                                <option value="Later">Later</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>

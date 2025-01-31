@@ -605,6 +605,9 @@ p {
 .ltn__enquiry-now-modal-area .modal-header .close {
     z-index: 9;
 }
+.ltn__enquiry-now-modal-area .modal-dialog {
+    margin-top: 7.5%;
+}
 .enquiry-now-form-box {
     padding: 2.5% 1.25%;
     position: relative;
