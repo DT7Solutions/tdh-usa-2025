@@ -140,3 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(switchTab, intervalTime);
 });
 
+/*DOWNLOAD E-CATALOGUE BROCHURES-CATALOGUE*/
+function pdfbtn() {
+    var pdfUrl = 'https://heyzine.com/flip-book/9727972cf9.html';
+    window.open(pdfUrl, '_blank');
+}
