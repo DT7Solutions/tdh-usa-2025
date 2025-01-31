@@ -145,3 +145,29 @@ function pdfbtn() {
     var pdfUrl = 'https://heyzine.com/flip-book/9727972cf9.html';
     window.open(pdfUrl, '_blank');
 }
+
+
+
+$(document).ready(function () {
+    $('select').niceSelect();
+
+    let purchaseTiming = $("#purchase-timing");
+    let purchaseTimingSelect = purchaseTiming.find("select");
+    let subjectField = $("#subject-field");
+    let subjectInput = subjectField.find("input");
+
+    purchaseTiming.removeClass("d-none");
+    subjectField.addClass("d-none");
+    $("#purpose").on("change", function () {
+        if ($(this).val() === "Product Purchase") {
+            purchaseTiming.removeClass("d-none");
+            subjectField.addClass("d-none");
+            subjectInput.val("");
+        } else {
+            purchaseTiming.addClass("d-none");
+            purchaseTimingSelect.val("").niceSelect("update");
+            subjectField.removeClass("d-none");
+        }
+    });
+});
+

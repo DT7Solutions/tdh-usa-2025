@@ -675,13 +675,35 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="submit"],
-textarea {
+textarea,
+.input-item .nice-select {
     height: 50px;
+    line-height: 45px;
     padding-left: 10px;
     margin-bottom: 10px;
     padding-right: 20px;
     border-radius: 4px;
 }
+.nice-select .option {
+    min-height: 25px;
+    padding: 1% 5%;
+    font-weight: 400;
+}
+.input-item .nice-select .current {
+    background-color: transparent !important;
+}
+.input-item .nice-select .current,
+.nice-select .option.selected.disabled {
+    background-color: #ececec;
+    color: var(--ltn__paragraph-color) !important;
+    font-weight: 400;
+}
+.nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover {
+    background-color: #ececec;
+    color: var(--ltn__paragraph-color);
+    font-weight: 600;
+}
+
 
 /* Awards and Recognitions Page */
 .ltn__gallery-item-info {

@@ -256,26 +256,41 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input-item">
-                                        <select class="nice-select">
-                                            <option>Select Purpose Of Reach</option>
-                                            <option>Product Purchase </option>
-                                            <option>Distibution Enquiry </option>
-                                            <option>Marketing</option>
-                                            <option>Feedback</option>
-                                            <option>Complaints</option>
-                                            <option>Others</option>
+                                        <select id="purpose" class="nice-select" name="purpose" required>
+                                            <option value="" selected disabled>Select Purpose of Reach</option>
+                                            <option value="Product Purchase">Product Purchase</option>
+                                            <option value="Distribution Enquiry">Distribution Enquiry</option>
+                                            <option value="Marketing Enquiry">Marketing Enquiry</option>
+                                            <option value="Feedback">Feedback</option>
+                                            <option value="Complaints">Complaints</option>
+                                            <option value="Others">Others</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-none" id="purchase-timing">
+                                    <div class="input-item">
+                                        <select class="nice-select" name="purchase_timing">
+                                            <option value="" selected disabled>When do you plan to purchase?</option>
+                                            <option value="Immediately">Immediately</option>
+                                            <option value="Within 3 Months">Within 3 Months</option>
+                                            <option value="Later">Later</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-none" id="subject-field">
+                                    <div class="input-item input-item-subject ltn__custom-icon">
+                                        <input type="text" name="subject" placeholder="Enter Subject">
                                     </div>
                                 </div>
                             </div>
                             <div class="input-item input-item-textarea ltn__custom-icon">
-                                <textarea name="message" placeholder="Write your detailed expalination here..." required></textarea>
+                                <textarea name="message" placeholder="Write your detailed explanation here..." required></textarea>
                             </div>
                             <div class="btn-wrapper mt-0">
                                 <button class="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">Submit</button>
                             </div>
                             <p class="form-messege mb-0 mt-20"></p>
-                        </form>
+                        </form>                        
                     </div>
                 </div>
             </div>
