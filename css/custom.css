@@ -217,6 +217,9 @@ p {
 .ltn__category-item {
     border-radius: 4px;
 }
+.ltn__category-area .section-title span {
+    color: var(--white);
+}
 
 /* Our Products */
 .ltn__product-tab-area .product-badge {
@@ -600,6 +603,14 @@ p {
     }
 }
 
+/* Quick View Modal Form */
+.ltn__quick-view-modal-area hr,
+.ltn__quick-view-modal-area .ltn__social-media {
+    display: none;
+}
+.ltn__quick-view-modal-area .ltn__quick-view-modal-inner .modal-product-item .row {
+    align-items: center;
+}
 
 /* Enquiry Now Modal Form */
 .ltn__enquiry-now-modal-area .modal-header .close {
