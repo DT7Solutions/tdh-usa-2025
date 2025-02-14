@@ -853,9 +853,24 @@ textarea,
 }
 
 
-
-
 .ltn__pagination ul,
 .ltn__pagination-area ul {
     display: none
+}
+
+/* Our Network Locations Page */
+.gm-style .ltn__map-item {
+    padding: 0%;
+}
+.gm-style .ltn__map-item .ltn__location-name,
+.gm-style .ltn__map-item .ltn__location-single-info {
+    margin-bottom: 5%;
+}
+.gm-style .ltn__map-item .btn-wrapper {
+    margin-top: 5%;
+}
+.gm-style .ltn__map-item .btn {
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 6px;
 }
