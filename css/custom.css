@@ -31,11 +31,11 @@ p {
 }
 .ltn__header-middle-area {
     background: #fff6e3;
-    padding: 0% !important;
+    padding: 0.25% !important;
 }
 .site-logo-wrap .site-logo {
     min-width: auto;
-    max-width: 200px;
+    max-width: 125px;
 }
 .ltn__section-title-2 .section-title {
     font-size: 28px;
@@ -206,16 +206,24 @@ p {
 }
 
 /*  Categorys  */
+.ltn__category-area.before-bg-1:before {
+    /* height: 40%; */
+}
 .ltn__category-item {
     background-image: url(../img/categories/product-brush-circle-effect.png); 
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 30%;
 }
 .ltn__category-item-img img{
-    max-height: 200px;
+    max-height: 250px;
 }
 .ltn__category-item {
+    padding: 0%;
     border-radius: 4px;
+}
+.ltn__category-item-name {
+    margin-top: -2.5;
+    padding: 0px 20px 5px;
 }
 .ltn__category-area .section-title span {
     color: var(--white);
@@ -238,6 +246,7 @@ p {
     padding: 2.5% 0% 0%;
     border: 2px solid var(--border-color-8);
     border-radius: 6px;
+    margin-bottom: 10%;
 }
 .ltn__product-item-3 .product-title {
     font-size: 18px;
@@ -539,6 +548,9 @@ p {
 }
 .footer-widget {
     margin-bottom: 20px;
+}
+.footer-logo .site-logo {
+    max-width: 175px;
 }
 .footer-menu ul li a::before {
     position: absolute;
