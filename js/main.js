@@ -1124,6 +1124,44 @@
             });
         };
 
+        if($('.ltn__brand-logo-active-1').length){
+            $('.ltn__brand-logo-active-1').slick({
+                rtl: false,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 8,
+                slidesToScroll: 1,
+                prevArrow: '<a class="slick-prev"><i class="fas fa-arrow-left" alt="Arrow Icon"></i></a>',
+                nextArrow: '<a class="slick-next"><i class="fas fa-arrow-right" alt="Arrow Icon"></i></a>',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 6,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 580,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        };
+
         /* --------------------------------------------------------
             28. Blog Gallery (Blog Page )
         --------------------------------------------------------- */

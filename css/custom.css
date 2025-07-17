@@ -246,7 +246,7 @@ p {
     padding: 2.5% 0% 0%;
     border: 2px solid var(--border-color-8);
     border-radius: 6px;
-    margin-bottom: 10%;
+    margin-bottom: 2.5%;
 }
 .ltn__product-item-3 .product-title {
     font-size: 18px;
@@ -339,7 +339,11 @@ p {
     margin-left: 5px;
 }
 
-
+@media (max-width: 991px) {
+    .ltn__product-item-3 {
+        margin-bottom: 5%;
+    }
+}
 /* Why Choose Us */
 .why-choose-us {
     background: #fff6e3;
@@ -817,6 +821,10 @@ textarea,
     -webkit-line-clamp: unset;
     overflow: visible;
     white-space: normal;
+}
+.ltn__brand-logo-active-1 .ltn__brand-logo-item {
+    opacity: 1;
+    filter: none;
 }
 @media (max-width: 991px) {
     .ltn__gallery-item .ltn-date {
